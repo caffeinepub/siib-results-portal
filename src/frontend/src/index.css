@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/assets/fonts/PlusJakartaSans.woff2") format("woff2");
+  font-weight: 300 700;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+    /* Red brand: #8B1E1E → oklch approx 0.38 0.15 22 */
+    --background: 0.96 0.003 60;
+    --foreground: 0.18 0.01 30;
+    --card: 1 0 0;
+    --card-foreground: 0.18 0.01 30;
+    --popover: 1 0 0;
+    --popover-foreground: 0.18 0.01 30;
+    --primary: 0.38 0.15 22;
+    --primary-foreground: 0.98 0 0;
+    --secondary: 0.93 0.01 30;
+    --secondary-foreground: 0.38 0.15 22;
+    --muted: 0.94 0.005 30;
+    --muted-foreground: 0.5 0.02 30;
+    --accent: 0.92 0.02 22;
+    --accent-foreground: 0.38 0.15 22;
+    --destructive: 0.38 0.15 22;
+    --destructive-foreground: 0.98 0 0;
+    --border: 0.88 0.01 30;
+    --input: 0.88 0.01 30;
+    --ring: 0.38 0.15 22;
+    --chart-1: 0.38 0.15 22;
+    --chart-2: 0.55 0.12 22;
+    --chart-3: 0.7 0.08 22;
+    --chart-4: 0.82 0.05 22;
+    --chart-5: 0.92 0.02 22;
+    --sidebar: 0.98 0 0;
+    --sidebar-foreground: 0.18 0.01 30;
+    --sidebar-primary: 0.38 0.15 22;
+    --sidebar-primary-foreground: 0.98 0 0;
+    --sidebar-accent: 0.92 0.02 22;
+    --sidebar-accent-foreground: 0.38 0.15 22;
+    --sidebar-border: 0.88 0.01 30;
+    --sidebar-ring: 0.38 0.15 22;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Plus Jakarta Sans", "Inter", sans-serif;
+  }
+}
